@@ -15,6 +15,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import CheckroomIcon from '@mui/icons-material/Checkroom';
 
 function Copyright() {
   return (
@@ -26,6 +27,7 @@ function Copyright() {
       {new Date().getFullYear()}
       {'.'}
     </Typography>
+
   );
 }
 
@@ -42,16 +44,17 @@ export default function Album() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       
-
+      
       <AppBar position="static" style={{ background: 'beige'}}>
        <Toolbar>
-          <CameraIcon sx={{ mr: 2 }} />
+          <CheckroomIcon style={{ fill: 'Brown' }} sx={{ mr: 2 }} />
           <Typography variant="h6" color="Brown" noWrap>
             StyleCast
           </Typography>
           </Toolbar>
       </AppBar>
-   
+
+      <Box sx={{ m: 3 }} /> 
 
       <main>
         {/* Hero unit */}
@@ -60,6 +63,8 @@ export default function Album() {
               You recently bought:
             </Typography>
         </nav>
+
+        <Box sx={{ m: -5 }} /> 
 
         <Container sx={{ py: 6 }} maxWidth="md">
           {/* End hero unit */}
@@ -73,7 +78,7 @@ export default function Album() {
                     component="img"
                     sx={{
                       // 16:9
-                      pt: '56.25%',
+                      pt: '0%',
                     }}
                     image="https://source.unsplash.com/random"
                     alt="random"
@@ -98,11 +103,12 @@ export default function Album() {
         </Container>
 
         <Typography variant="h5" align="left" color="text.secondary" paragraph>
-              Our recommendation:
+              We recommend:
             </Typography>
 
-        
-            <Container sx={{ py: 6 }} maxWidth="md">
+        <Box sx={{ m: -5 }} /> 
+
+        <Container sx={{ py: 6 }} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map((card) => (
@@ -114,7 +120,7 @@ export default function Album() {
                     component="img"
                     sx={{
                       // 16:9
-                      pt: '56.25%',
+                      pt: '0%',
                     }}
                     image="https://source.unsplash.com/random"
                     alt="random"
@@ -129,7 +135,7 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button  size="small"  color="success">More Info</Button>
+                    <Button size="small"  color="success">More Info</Button>
                   </CardActions>
                 </Card>
 
