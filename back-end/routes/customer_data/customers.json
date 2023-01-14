@@ -1,0 +1,55 @@
+ [
+  {
+    "customer_id": 1234,
+    "purchase_hist": [
+      {
+        "id": 2,
+        "color": "violet",
+        "image": "PE17/00002.png",
+        "category": "long sleeve"
+      },
+      {
+        "id": 1,
+        "color": "violet",
+        "image": "PE17/00001.png",
+        "category": "long sleeve"
+      },
+      {
+        "id": 174,
+        "color": "blue",
+        "image": "PE17/00174.png",
+        "category": "culottes"
+      }
+    ]
+  },
+
+  {
+    "customer_id": 1235,
+    "purchase_hist": [
+      {
+        "id": 10,
+        "color": "black",
+        "image": "PE17/00010.png",
+        "category": "miniskirt"
+      },
+      {
+        "id": 12,
+        "color": "brown",
+        "image": "PE17/00012.png",
+        "category": "long sleeve"
+      },
+      {
+        "id": 36,
+        "color": "black",
+        "image": "PE17/00036.png",
+        "category": "long sleeve"
+      },
+      {
+        "id": 40,
+        "color": "black",
+        "image": "PE17/00040.png",
+        "category": "medium coat"
+      }
+    ]
+  }
+]
